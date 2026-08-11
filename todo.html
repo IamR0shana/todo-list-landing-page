@@ -19,17 +19,15 @@
         >
 
             <nav class="main-navigation">
-                <a href="#home">Home</a>
+                <a href="#todo.html">Home</a>
                 <a href="#features">Features</a>
                 <a href="#categories">Categories</a>
                 <a href="#contact">Contact</a>
             </nav>
        
         <div class="account-links">
-            <nav>
-                <a href="#login">Log In</a>
-                <a href="#signup">Sign Up</a>
-            </nav>
+                <a href="#login.html">Log In</a>
+                <a href="#signup.html" class="signup">Sign Up</a>
         </div>
 
     </header>
@@ -38,15 +36,15 @@
     <main>
 
         <section id="home" class="hero-section"> 
-
+        
             <div class="hero-content">
                 <span class="section-label">Stay Organized</span>
                 <h1>Organize Your Tasks.<br>Achieve More.</h1>
-                <p>Manage your daily tasks, organize your work, and stay focused on what matters.</p>
+                <p>Manage your daily tasks, organize your work,<br> and stay focused on what matters.</p>
 
                 <div class="hero-actions">
-                    <a href="#signup">Get Started</a>
-                    <a href="#features">view Features</a>
+                    <a href="#signup" class="orbutton">Get Started</a>
+                    <a href="#features" class="prbutton">view Features</a>
                 </div>
 
                 <div class="hero-users">
@@ -140,11 +138,67 @@
 
 
     <footer>
-       <div class="social-smedia"></div>
-       <div class="product"></div>
-       <div class="company"></div>
-       <div class="support"></div>
-       <div class="subscribe"></div>
+        <div class="partup">
+             <div class="social-media">
+        <img
+        class="footer-logo" 
+        src="images/logo.jpg" 
+        alt="To Do logo">
+        <p>This simplest way to manage<br>your taska and get things done.</p>
+        <a href="#">
+             <img src="images/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#">
+             <img src="images/instagram.svg" alt="Instagram">
+        </a>
+       </div>
+
+       <div class="product">
+        <p class="footer-title">Product</p>
+        <a href="#">Features</a>
+          <a href="#">How it works</a>
+            <a href="#">Pricing</a>
+              <a href="#">Updates</a>
+       </div>
+
+       <div class="company">
+        <p class="footer-title">Company</p>
+        <a href="#">About Us</a>
+          <a href="#">Blog</a>
+            <a href="#">Contact</a>
+              <a href="#">Careers</a>
+       </div>
+
+       <div class="support">
+        <p class="footer-title">Support</p>
+        <a href="#">Help Center</a>
+          <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+              <a href="#">FAQ</a>
+       </div>
+
+       <div class="subscribe">
+        <p class="footer-title">Subscribe to our newsletter</p>
+        <p>Get tips and updates straight to<br>your inbox.</p>
+                <form class="subscribe-form">
+                 <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                    <button type="submit">Subscribe</button>
+                </form>
+       </div>
+    </div>
+
+      <div class="partdown">
+        <img 
+           class="last-icon" 
+        src="" 
+        alt="icon">
+        <p>2026 To Do List. All rights reserved.</p>
+      </div>
     </footer>
 </body>
 </html>
