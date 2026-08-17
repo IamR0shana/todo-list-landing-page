@@ -219,9 +219,7 @@ header .account-links .signup:hover{
 
 .categories-section{
         width: 100%;
-        height: auto;
-        padding: 40px 100px;
-        display: block;
+        padding: 10px 100px;
         text-align: center;
 }
 .categories-section span{
@@ -238,16 +236,17 @@ header .account-links .signup:hover{
         font-size: 28px;
         margin-bottom: 45px;
 }
-.categories-cards{
+.categorie-cards{
         display: flex;
         border-radius: 18px;
-        gap: 55px;
+        gap: 25px;
         padding: 40px;
         border:1px solid #ebebeb;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 .cardcat{
-    width: 20%;
+    flex: 1;
+    min-width: 0;
 }
 .cardcat a{
     text-decoration: none;
@@ -255,7 +254,7 @@ header .account-links .signup:hover{
 .cardcat .Work{
          color:#5F3C9F;
          background-color: #F0EBF9;
-         padding: 30px 50px;
+         padding: 25px 15px;
          border-radius: 18px;
 }
 .cardcat .Personal{
@@ -302,11 +301,7 @@ header .account-links .signup:hover{
 
 
 .cta-section {
-    display: flex;
-    justify-content: center;
-   
-    
-    
+     display: flex;
     background-image: url("images/ctaback copy.png");
     background-position: right;
     border-radius: 18px;
@@ -314,7 +309,203 @@ header .account-links .signup:hover{
     overflow: hidden;
     
     padding:  30px 90px;
-    margin: 15px 100px;
+    margin: 25px 100px;
+}
+.cta-section img{
+        width:150px;
+        height: auto;
+        margin-right: 40px;
+}
+.cta-section .contents{
+        display: flex;
+        gap: 300px;
+}
+.cta-content h2,
+.cta-content p {
+    color: white;
+}
+.cta-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.cta-action a {
+    display: inline-block;
+
+    padding: 15px 45px;
+
+    background-color: #E8AA2E;
+    color: black;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 8px;
+}
+.cta-action a:hover {
+    background-color: #D99A1F;
+}
+
+.cta-action p {
+    margin: 12px 0 0;
+
+    color: white;
+    font-size: 13px;
+}
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #56379A;
+    color: white;
+}
+
+/* قسمت بالای Footer */
+footer .partup {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+    padding: 50px 100px 35px;
 }
 
 
+/* ---------- Logo & Social Media ---------- */
+
+.social-media {
+padding-top: 10px;
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.social-media .footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.social-media p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+
+/* ---------- Footer Columns ---------- */
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+
+    width: 130px;
+}
+
+
+/* عنوان ستون‌ها */
+
+.footer-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* لینک‌های Footer */
+
+.boxes a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+     
+}
+
+.boxes a:hover {
+    color: #E8AA2E;
+}
+
+
+/* ---------- Subscribe ---------- */
+
+.subscribe {
+    width: 280px;
+}
+
+.subscribe p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.subscribe-form input {
+    width: 180px;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 8px 0 0 8px;
+}
+
+.subscribe-form button {
+    height: 42px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 0 8px 8px 0;
+
+    background-color: #E8AA2E;
+    color: black;
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #D99A1F;
+}
+
+
+/* ---------- Footer Bottom ---------- */
+
+footer .partdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px 100px;
+
+    background-color:#55369A;
+}
+
+.partdown p {
+    margin: 0;
+
+    color: white;
+    font-size: 13px;
+}
+.last-icon{  
+    width: 20px;
+    height: auto;}
