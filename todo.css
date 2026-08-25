@@ -20,8 +20,8 @@ header {
         padding: 5px 100px;
 }
 header .site-logo{
-        width: 150px;
-        height: 50px;
+        width: 180px;
+        height: 60px;
 }
 
 header .main-navigation{
@@ -32,7 +32,7 @@ header .main-navigation{
 header .main-navigation a{
         color: black;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 17px;
         display: flex;
         align-items: center;
 }
@@ -41,24 +41,28 @@ header .main-navigation a:hover {
 }
 
 header .account-links{
+        margin-top: 5px;
         display: flex;
-        gap: 40px;
+        gap: 25px;
         padding: 0 50px 0 0;
 }
 header .account-links a{
-        display: flex;
-        align-items: center;
+        height: 40px;
         color: black;
         text-decoration: none;
-        font-size: 20px;
-
+        padding: 8px 30px;
+        font-size: 17px;
+        border: 2px solid transparent;
 }
 header .account-links .login:hover{
-        color: purple;
+        color: #56379A;
+         border-color: #56379A;
+        border-radius: 8px;
 }
 header .account-links .signup{
         background-color: #E8AA2E;
-        padding: 13px 20px; 
+        height: 40px;
+        padding: 8px 20px;
         border-radius: 8px;
         font-weight: bold;
 }
@@ -66,9 +70,9 @@ header .account-links .signup:hover{
         background-color: #D99A1F;
 }
 
-
-
 .hero-section{
+        max-width: 100%;
+        height: auto;
         padding: 40px 100px;
         background-image: url("images/backhero.png");
         background-position:right;
@@ -134,9 +138,10 @@ header .account-links .signup:hover{
 }
 
 .hero-image img{
-        border-radius: 8px;
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        border-radius: 8px;
+       
         filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 }
 
@@ -145,6 +150,11 @@ header .account-links .signup:hover{
 }
 .hero-section .hero-image{
       width:50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-section .hero-users{
@@ -200,13 +210,17 @@ header .account-links .signup:hover{
         font-size: 15px;
 }
 .feature-cards .card{
+        width: 30%;
+        height: auto;
         display: flex;
         gap: 10px;
         border:1px solid #ebebeb;
         border-radius: 18px;
-        padding: 35px 20px;
+        padding: 40px 20px;
         margin-top: 15px;
         text-align:left;
+        align-items: center;
+
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 .feature-cards .card .txt p{
@@ -214,7 +228,8 @@ header .account-links .signup:hover{
         font-size: 11px;
 }
 .feature-cards .card img{
-    width: 20%;
+    width: 80px;
+    height: 80px;
 }
 
 .categories-section{
@@ -237,24 +252,24 @@ header .account-links .signup:hover{
         margin-bottom: 45px;
 }
 .categorie-cards{
-        display: flex;
-        border-radius: 18px;
-        gap: 25px;
-        padding: 40px;
-        border:1px solid #ebebeb;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+         display: flex;
+         border-radius: 18px;
+         gap: 25px;
+         padding: 40px;
+         border:1px solid #ebebeb;
+         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 .cardcat{
-    flex: 1;
-    min-width: 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;    
 }
-.cardcat a{
-    text-decoration: none;
-}
+
 .cardcat .Work{
          color:#5F3C9F;
          background-color: #F0EBF9;
-         padding: 25px 15px;
+         padding: 30px 50px;
          border-radius: 18px;
 }
 .cardcat .Personal{
@@ -288,20 +303,26 @@ header .account-links .signup:hover{
          border-radius: 18px;
 }
 .cardcat a {
-    color: inherit;
-    font-size: 18px;
+         color: inherit;
+    
+         text-decoration: none;
+          margin-bottom: 8px;
 }
 .cardcat p{
-    color:#6E6E73 ;
-    font-size: 13px;
+         color:#6E6E73 ;
+         font-size: 13px;
 }
 .cardcat img{
-    width:30%;
+         width: 40px;
+         height: 40px;
+         object-fit: contain;
+
+         margin-bottom: 8px;
 }
 
 
 .cta-section {
-     display: flex;
+    display: flex;
     background-image: url("images/ctaback copy.png");
     background-position: right;
     border-radius: 18px;
@@ -312,13 +333,13 @@ header .account-links .signup:hover{
     margin: 25px 100px;
 }
 .cta-section img{
-        width:150px;
+        width:160px;
         height: auto;
         margin-right: 40px;
 }
 .cta-section .contents{
         display: flex;
-        gap: 300px;
+        gap: 200px;
 }
 .cta-content h2,
 .cta-content p {
@@ -354,6 +375,7 @@ header .account-links .signup:hover{
     color: white;
     font-size: 13px;
 }
+
 /* ================= FOOTER ================= */
 
 footer {
@@ -361,7 +383,6 @@ footer {
     color: white;
 }
 
-/* قسمت بالای Footer */
 footer .partup {
     display: flex;
     justify-content: space-between;
@@ -371,8 +392,6 @@ footer .partup {
     padding: 50px 100px 35px;
 }
 
-
-/* ---------- Logo & Social Media ---------- */
 
 .social-media {
 padding-top: 10px;
@@ -393,14 +412,16 @@ padding-top: 10px;
 }
 
 .social-media a {
+    width: 32px;
+    height: 32px;
     display: inline-block;
     margin-right: 8px;
     text-decoration: none;
 }
 
 .social-media a img {
-    width: 32px;
-    height: 32px;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -509,3 +530,52 @@ footer .partdown {
 .last-icon{  
     width: 20px;
     height: auto;}
+
+    
+    
+    /* responssive */
+
+@media (max-width: 1280px){
+
+        .hero-image {
+                margin-top: 65px;
+        }
+
+       .categorie-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        
+        .cardcat {
+        flex: 0 1 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        } 
+
+        .Work, .Personal, .Study,
+        .Health, .Shopping, .Other{
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+        .cardcat img{
+                display:flex;
+                width: 30px;
+                height: 30px;
+        }
+        .cta-section img{
+        width:150px;
+        
+        }
+
+        .cta-section .contents{
+        display: flex;
+        gap: 100px;
+        }
+}
+
+  
