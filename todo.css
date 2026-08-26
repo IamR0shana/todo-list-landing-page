@@ -43,7 +43,7 @@ header .main-navigation a:hover {
 header .account-links{
         margin-top: 5px;
         display: flex;
-        gap: 25px;
+        gap: 10px;
         padding: 0 50px 0 0;
 }
 header .account-links a{
@@ -138,7 +138,7 @@ header .account-links .signup:hover{
 }
 
 .hero-image img{
-        max-width: 100%;
+        width: 100%;
         height: auto;
         border-radius: 8px;
        
@@ -146,15 +146,11 @@ header .account-links .signup:hover{
 }
 
 .hero-section .hero-content{
-     width: 43%;
+     width: 45%;
 }
 .hero-section .hero-image{
-      width:50%;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
+     width: 700px;
+     flex-shrink: 0;
 }
 
 .hero-section .hero-users{
@@ -537,27 +533,58 @@ footer .partdown {
 
 @media (max-width: 1280px){
 
+        header .site-logo{
+                width: 175px;
+                height: 65px;
+        }
+
+        header .main-navigation{
+                display: flex;
+                gap:35px;
+        }
+
+        header .main-navigation a{
+                font-size: 16px;
+        }
+
+        .hero-actions .orbutton,.hero-actions .prbutton{
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
         .hero-image {
                 margin-top: 65px;
         }
 
+        .account-links .login, .account-links .signup{
+                font-size: 16px;
+        }
+
+        .feature-cards h3{
+                font-size: 14px;
+        }
+
+        .feature-cards p{
+                font-size: 12px;
+        }
        .categorie-cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
         }
         
         .cardcat {
-        flex: 0 1 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
+                flex: 0 1 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
         } 
 
         .Work, .Personal, .Study,
         .Health, .Shopping, .Other{
-                width: 75%;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -568,14 +595,144 @@ footer .partdown {
                 height: 30px;
         }
         .cta-section img{
-        width:150px;
+                margin-top: 10px;
+                width:140px;
+                height: 140px;
         
         }
 
         .cta-section .contents{
-        display: flex;
-        gap: 100px;
+                display: flex;
+                gap: 100px;
         }
+        .boxes a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-size: 12px;
+     
+        }
+
+         .cta-section .contents{
+                display: flex;
+                gap: 50px;
+        }
+
+        .hero-section {
+                display: flex;
+                gap:60px;
+        }
+
+        .hero-section .hero-content{
+                width: 35%;
+        }
+
+        .hero-section .hero-content h1{
+                font-size: 50px;
+        }
+        .hero-section .hero-image{
+                margin: 0;
+                width: 600px;
+        
+        }
+        
+}
+
+@media( max-width: 1090px){
+
+        Header{
+                display: flex;
+              
+                gap: 20px;
+        } 
+
+        Header .site-logo{
+                width: 150px;
+                height: 60px;
+        }
+        
+        .hero-section .hero-content{
+                width: 42%;
+        }
+
+        .hero-section .hero-content h1{
+                font-size: 40px;
+        }
+        .hero-section .hero-content p{
+                font-size: 15px;
+        }
+        .hero-actions .orbutton,.hero-actions .prbutton{
+                 flex-shrink: 0;
+                font-size: 10px;
+                
+        }
+
+        .hero-section .hero-image{
+                width: 100%;
+                
+        }
+
+        .cardcat {
+                flex: 0 1 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+        } 
+
+         .Work, .Personal, .Study,
+        .Health, .Shopping, .Other{
+              font-size: 14px;
+        }
+
+        .cardcat p {
+                font-size: 11px;
+        }
+
+        .cta-section .contents{
+                display: flex;
+                gap: 50px;
+        }
+        footer .partup{
+                display: flex;
+                gap:35px;
+        }
+
+        .subscribe-form input{
+                font-size: 9px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 34px;
+        }
+
+        .subscribe-form button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 9px;
+                width: 70px;
+                height: 34px;
+        }
+        
+       .subscribe p{
+        font-size: 12px;
+       }
+
+       .partup p{
+        font-size: 12px;
+       }
+
+       .social-media .footer-logo{
+        width: 150px;
+        height: 30px;
+       }
+
+       .social-media a{
+        width: 22px;
+        height: 22px;
+       }
 }
 
   
