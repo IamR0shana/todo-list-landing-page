@@ -12,16 +12,21 @@ body {
         max-width: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
         width: 100%;
-        height: 60px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         padding: 5px 100px;
 }
 header .site-logo{
         width: 180px;
-        height: 60px;
+        height: auto;
 }
 
 header .main-navigation{
@@ -44,7 +49,7 @@ header .account-links{
         margin-top: 5px;
         display: flex;
         gap: 10px;
-        padding: 0 50px 0 0;
+        padding: 14px 10px 0 0;
 }
 header .account-links a{
         height: 40px;
@@ -53,6 +58,7 @@ header .account-links a{
         padding: 8px 30px;
         font-size: 17px;
         border: 2px solid transparent;
+        white-space: nowrap
 }
 header .account-links .login:hover{
         color: #56379A;
@@ -65,6 +71,7 @@ header .account-links .signup{
         padding: 8px 20px;
         border-radius: 8px;
         font-weight: bold;
+        white-space: nowrap
 }
 header .account-links .signup:hover{
         background-color: #D99A1F;
@@ -119,6 +126,7 @@ header .account-links .signup:hover{
         border-radius: 8px;
         padding: 15px 50px;
         font-weight: 700;
+        white-space: nowrap
 }
 .hero-actions .orbutton:hover{
          background-color: #D99A1F;
@@ -131,10 +139,18 @@ header .account-links .signup:hover{
         color: #62489E;
         border: 2px solid #62489E;
         font-weight: 700;
+        white-space: nowrap
 }
 .hero-actions .prbutton:hover{
         border: 2px solid #D99A1F;
         color: #D99A1F;
+}
+
+.hero-section .hero-content{
+     width: 45%;
+}
+.hero-section .hero-image{
+     width: 55%;
 }
 
 .hero-image img{
@@ -143,14 +159,6 @@ header .account-links .signup:hover{
         border-radius: 8px;
        
         filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
-}
-
-.hero-section .hero-content{
-     width: 45%;
-}
-.hero-section .hero-image{
-     width: 700px;
-     flex-shrink: 0;
 }
 
 .hero-section .hero-users{
@@ -200,13 +208,13 @@ header .account-links .signup:hover{
 }
     
 .features-section .feature-cards{
+        flex-wrap: wrap;
         display: flex;
-        justify-content: center;
         gap: 35px;
         font-size: 15px;
 }
 .feature-cards .card{
-        width: 30%;
+        flex: 1 1 280px;
         height: auto;
         display: flex;
         gap: 10px;
@@ -216,7 +224,7 @@ header .account-links .signup:hover{
         margin-top: 15px;
         text-align:left;
         align-items: center;
-
+        
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 .feature-cards .card .txt p{
@@ -249,53 +257,71 @@ header .account-links .signup:hover{
 }
 .categorie-cards{
          display: flex;
-         border-radius: 18px;
-         gap: 25px;
+         gap: 35px;
+         
          padding: 40px;
+
          border:1px solid #ebebeb;
+         border-radius: 18px;
          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 .cardcat{
+         flex: 1 1 180px;
+         min-width: 0;
          display: flex;
          flex-direction: column;
          align-items: center;
-         justify-content: center;    
+         justify-content: center; 
+            
+}
+.cardcat > div {
+    width: 100%;
+    min-height: 170px;
+
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
 }
 
 .cardcat .Work{
          color:#5F3C9F;
          background-color: #F0EBF9;
-         padding: 30px 50px;
+         
          border-radius: 18px;
 }
 .cardcat .Personal{
          color: #F4A510;
          background-color: #FEF4E5;
-         padding: 30px 50px;
+         
          border-radius: 18px;
 }
 .cardcat .Study{
          color:#3772D5;
          background-color: #E9F0FE;
-         padding: 30px 50px;
+        
          border-radius: 18px;
 }
 .cardcat .Health{
          color: #22A35E;
          background-color: #E7F9EE;
-         padding: 30px 50px;
+         
          border-radius: 18px;
 }
 .cardcat .Shopping{
          color: #EE467A;
          background-color: #FDE9EF;
-         padding: 30px 50px;
+         
          border-radius: 18px;
 }
 .cardcat .Other{
          color: #6E6E73;
          background-color: #EFEFF1;
-         padding: 30px 50px;
+         
          border-radius: 18px;
 }
 .cardcat a {
@@ -319,38 +345,45 @@ header .account-links .signup:hover{
 
 .cta-section {
     display: flex;
+    align-items: center;
+    
     background-image: url("images/ctaback copy.png");
     background-position: right;
     border-radius: 18px;
-
-    overflow: hidden;
-    
+   
     padding:  30px 90px;
     margin: 25px 100px;
 }
 .cta-section img{
-        width:160px;
+        width: 160px;
         height: auto;
         margin-right: 40px;
 }
 .cta-section .contents{
+        align-items: center;
+        justify-content: space-between;
         display: flex;
-        gap: 200px;
+        gap: 300px;
+        flex: 1;
+}
+.cta-content {
+        flex: 1;
 }
 .cta-content h2,
 .cta-content p {
     color: white;
+    white-space: nowrap
 }
+
 .cta-action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    flex-shrink: 0;
+    margin: 0;
 }
-
+ 
 .cta-action a {
-    display: inline-block;
-
     padding: 15px 45px;
 
     background-color: #E8AA2E;
@@ -360,7 +393,9 @@ header .account-links .signup:hover{
     font-weight: 700;
 
     border-radius: 8px;
+    white-space: nowrap;
 }
+
 .cta-action a:hover {
     background-color: #D99A1F;
 }
@@ -370,6 +405,7 @@ header .account-links .signup:hover{
 
     color: white;
     font-size: 13px;
+    white-space: nowrap
 }
 
 /* ================= FOOTER ================= */
@@ -383,14 +419,14 @@ footer .partup {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
+    flex-wrap: wrap;
     gap: 50px;
     padding: 50px 100px 35px;
 }
 
 
 .social-media {
-padding-top: 10px;
+    padding-top: 10px;
     width: 260px;
     flex-shrink: 0;
 }
@@ -460,6 +496,7 @@ padding-top: 10px;
 
 .subscribe {
     width: 280px;
+     max-width: 100%;
 }
 
 .subscribe p {
@@ -474,6 +511,7 @@ padding-top: 10px;
 }
 
 .subscribe-form input {
+    min-width: 0;
     width: 180px;
     height: 42px;
 
@@ -531,7 +569,13 @@ footer .partdown {
     
     /* responssive */
 
-@media (max-width: 1280px){
+@media (max-width: 1200px) { }
+
+@media (max-width: 900px) { }
+
+@media (max-width: 700px) { }
+
+/* @media (max-width: 1300px){
 
         header .site-logo{
                 width: 175px;
@@ -553,27 +597,49 @@ footer .partdown {
                 align-items: center;
                 justify-content: center;
         }
-        .hero-image {
-                margin-top: 65px;
+        .hero-section .hero-content{
+                margin-right: 30px;
         }
+        .hero-section .hero-image img{
+                width: 100%;
+        
+        }
+        .hero-section {
+                display: flex;
+                gap:60px;
+        }
+        .hero-section .hero-content{
+                width: 35%;
+        }
+        .hero-section .hero-content h1{
+                font-size: 50px;
+        }
+        
 
         .account-links .login, .account-links .signup{
                 font-size: 16px;
         }
 
+        .cta-action {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 25px 0 0 100px ;
+        }
+
         .feature-cards h3{
                 font-size: 14px;
         }
-
         .feature-cards p{
                 font-size: 12px;
         }
+
+
        .categorie-cards{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
         }
-        
         .cardcat {
                 flex: 0 1 25%;
                 display: flex;
@@ -581,6 +647,12 @@ footer .partdown {
                 align-items: center;
                 justify-content: center; 
         } 
+        .cardcat img{
+                display:flex;
+                width: 30px;
+                height: 30px;
+        }
+        
 
         .Work, .Personal, .Study,
         .Health, .Shopping, .Other{
@@ -589,53 +661,20 @@ footer .partdown {
                 flex-direction: column;
                 align-items: center;
         }
-        .cardcat img{
-                display:flex;
-                width: 30px;
-                height: 30px;
-        }
-        .cta-section img{
-                margin-top: 10px;
-                width:140px;
-                height: 140px;
-        
-        }
 
-        .cta-section .contents{
-                display: flex;
-                gap: 100px;
+
+        .cta-section img{
+                width:170px;
+                height: 170px;
         }
-        .boxes a {
+        
+       .boxes a {
                 display: block;
                 color: white;
                 text-decoration: none;
                 font-size: 12px;
-     
         }
 
-         .cta-section .contents{
-                display: flex;
-                gap: 50px;
-        }
-
-        .hero-section {
-                display: flex;
-                gap:60px;
-        }
-
-        .hero-section .hero-content{
-                width: 35%;
-        }
-
-        .hero-section .hero-content h1{
-                font-size: 50px;
-        }
-        .hero-section .hero-image{
-                margin: 0;
-                width: 70%;
-        
-        }
-        
 }
 
 @media( max-width: 1090px){
@@ -735,4 +774,4 @@ footer .partdown {
        }
 }
 
-  
+   */
